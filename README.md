@@ -1,5 +1,5 @@
 # Inventory Management System
-This is a Spring Boot-based project for managing an inventory system. It provides APIs for managing products including adding, retrieving and sorting products.
+This is a **Spring Boot-based** project for managing an inventory system. It provides APIs for managing products including adding, retrieving and sorting products.
 
 ## Import the Project from GitHub
 To import this project into your local machine, follow these steps:
@@ -27,16 +27,24 @@ Build the project using the IDE's built-in Maven tool. Look for the Maven panel 
 ## Run the Project
 To run the project locally, locate the InventoryManagementSystemApplication.java file from your IDE, Right-click the class and choose Run.
 
-To check the h2 in memory database, navigate to the following:
+## Access the database
+This project uses an H2 in-memory database.
+To access the database UI, open:
 http://localhost:8080/h2-console/
 
-## Test the Project:
-To test the use cases use the following endpoints in Postman:
+Use the following login details:
+JDBC URL: jdbc:h2:mem:testdb
+User Name: (The username is stored in the src/main/resources/application.properties file)
+Password: (The password is stored in the src/main/resources/application.properties file)
+
+
+## Test the API EndPoints:
+Use Postman or any REST client to test the API.
 
 1. Add new products to the system:
    POST: http://localhost:8080/products/
    
-   Sample data:
+   Sample Request Body:
    {
     "id": 1001,
     "name": "TV",
