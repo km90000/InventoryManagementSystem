@@ -16,21 +16,25 @@ Import into an IDE
 
 ## Build the Project:
 Navigate to the project directory in the terminal:
-cd InventoryManagementSystem
+**cd InventoryManagementSystem**
 
 Run the following Maven command to build the project and resolve dependencies, run the following command in the terminal:
-mvn clean install
+**mvn clean install**
 
 Using Maven in your IDE:
 Build the project using the IDE's built-in Maven tool. Look for the Maven panel and click on Install or Clean & Build.
 
 ## Run the Project
+Run the project directly by using the following command:
+**mvn spring-boot:run**
+
 To run the project locally, locate the InventoryManagementSystemApplication.java file from your IDE, Right-click the class and choose Run.
+
 
 ## Access the database
 This project uses an H2 in-memory database.
 To access the database UI, open:
-http://localhost:8080/h2-console/
+**http://localhost:8080/h2-console/**
 
 Use the following login details:
 JDBC URL: jdbc:h2:mem:testdb
